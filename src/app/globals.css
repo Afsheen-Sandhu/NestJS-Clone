@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  background-image: url('/cat.webp');
+  background-size: cover; /* stretches image to cover full screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* makes the image sticky */
+  color: white;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  z-index: -1;
+}
